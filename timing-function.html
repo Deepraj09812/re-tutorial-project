@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* Bouncing Ball animation */
+        .ball{width: 70px;height: 70px;border: 2px solid #000;
+        position: absolute;border-radius: 100%;left: 0;bottom: 0;animation: bb;
+    animation-duration: 10s;animation-timing-function:ease;animation-iteration-count: infinite;
+     }
+    @keyframes bb {
+        0%{left: 0;bottom: 0;}
+        10%{ left: 20%;bottom:90% ;}
+        50%{left: 30%;bottom: 1%;}
+        100%{left: 50%;bottom: 95%;}
+        }
+    </style>
+
+</head>
+<body>
+    <div class="ball"></div>
+
+    
+</body>
+</html>

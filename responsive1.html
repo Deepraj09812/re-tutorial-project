@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .g{background: green;}
+        .box{padding: 30px; margin: 20px;}
+        @media (min-width:480px) and (max-width:768px) {
+            .item{display: grid;grid-template-columns: auto auto;}
+            
+        }
+        @media (min-width:769px) {
+            .grid{display: grid;grid-template-columns: auto auto auto;}
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="g box"></div>
+    <div class="grid">
+        <div class="item">
+            <div class="g box"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, sed?</p>
+        </div>
+        <div class="item">
+            <div class="g box"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, sed?</p>
+        </div>
+        <div class="item">
+            <div class="g box"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, sed?</p>
+        </div>
+    </div>
+    
+    </div>
+</body>
+</html>

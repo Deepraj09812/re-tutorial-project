@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 450px;
+            background: red;
+            text-align: center;
+            /* margin-top: 10%; */
+            /* margin-left: 35%; */
+            animation-name: anm;
+            animation-duration: 2s;
+            animation-iteration-count: 10;
+            animation-delay: 2s;
+            animation-direction: alternate;
+        }
+
+        @keyframes anm {
+
+            0%,
+            from {
+                background: green;
+            }
+
+            20%,
+            from {
+                background: grey;
+            }
+
+            50%,
+            from {
+                background: black;
+            }
+
+            100%,
+            from {
+                background: yellow;
+            }
+
+
+
+
+        }
+        .box1{
+            width: 300px;
+            height: 450px;
+            background: brown;
+            text-align: center;
+            /* margin-top: 10%; */
+            /* margin-left: 35%; */
+            position: absolute;
+            animation-name: mm;
+            animation-duration: 2s;
+            animation-iteration-count: 10;
+            animation-delay:   2s;
+            animation-direction:alternate;
+            animation-fill-mode:forwards;
+        }
+        @keyframes mm {
+            0% {left: 0;background: black;} 100%{left: 800px;}
+            
+        }
+        .box2{width: 250px;height: 280px;background: greenyellow;animation-name: cc;animation-duration: 2s;animation-iteration-count: infinite;animation-timing-function: linear;;}
+        /* ease, ease-in,ease-out, ease-in-out */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode */
+        @keyframes cc {
+            0%{rotate: 0deg;}
+            100%{transform: rotate(360deg);}
+            
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="box"> This is animation</div>
+    <div class="box1"> This is animation</div>
+    <div class="box2"> This is animation</div>
+
+
+
+</body>
+
+</html>

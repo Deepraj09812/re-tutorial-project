@@ -1,0 +1,78 @@
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 0, 0, 0.749);
+  width: 200px;
+  height: 200px;
+}
+
+/* Nesting Topic */
+nav {
+  float: left;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  text-decoration: none;
+}
+nav ul li a {
+  color: rgba(255, 0, 0, 0.749);
+}
+nav ul li a:hover {
+  text-decoration: none;
+}
+
+.left {
+  width: 300px;
+  height: 20000px;
+  background: red;
+  float: left;
+}
+
+.right {
+  width: 100px;
+  height: 260px;
+  background: rgb(0, 255, 38);
+  float: right;
+}
+
+.box {
+  background: red;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+.con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.con1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.con2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}/*# sourceMappingURL=style.css.map */

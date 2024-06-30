@@ -1,0 +1,36 @@
+@import"header";
+
+// .box{border-radius: 40%;}  "for text"
+
+@mixin abc($w, $h, $b, $f: right) {
+    width: $w;
+    height: $h;
+    background: $b;
+    float: $f;
+}
+
+.left {
+    @include abc(300px, 20000px, red, left)
+}
+.right {
+    @include abc(100px, 260px, rgb(0, 255, 38), )
+}
+@mixin flex($jpt){
+    display: flex;
+    justify-content: $jpt;
+
+}
+.box{
+    background: red;
+    padding: 20px;
+    border: 2px solid black;
+}
+.con{
+    @include flex(start);
+}
+.con1{
+    @include flex(space-between);
+}
+.con2{
+    @include flex(end);
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        nav {
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: start;
+            gap: 40px;
+        }
+
+        .toggle>div {
+            width: 25px;
+            height: 5px;
+            background: black;
+            margin: 4px;
+            display: none;
+        }
+
+        .new {
+            display: block;
+        }
+
+        @media (max-width:480px) {
+            .toggle>div {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+                text-align: center;
+            }
+
+            nav li {
+                line-height: 50px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">contact Us</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Block</a></li>
+
+        </ul>
+    </nav>
+
+    <script>
+        document.querySelector(".toggle").addEventListener('click', nn)
+        function nn() {
+            document.querySelector('nav ul').classList.toggle('new')
+        }
+    </script>
+
+</body>
+
+</html>
